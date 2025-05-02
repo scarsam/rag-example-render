@@ -15,7 +15,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production react-router build",
     "dev": "bunx --bun vite",
-    "start": "cross-env NODE_ENV=production bun ./build/server/index.js",
+    "start": "bun run build && cross-env NODE_ENV=production bun ./build/server/index.js",
     "test": "vitest",
     "test:watch": "vitest watch",
     "typecheck": "react-router typegen && tsc",
